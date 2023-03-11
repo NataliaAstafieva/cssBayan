@@ -7,6 +7,10 @@ html {
     width: 800px;
     margin: auto;
 }
+
+.accordion-name {
+    margin-left: 10%;
+}
 .container {
     width: 800px;
     height: 1500px;
@@ -21,39 +25,14 @@ html {
     background-color: rgb(173, 171, 171);
 }
 
-.header1-cont,
-.header2-cont,
-.header3-cont,
-.header4-cont,
-.header5-cont {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.plus {
-    margin-right: auto;
-    display: none;
-}
-
-.cross {
-    margin-right: auto;
-    display: none;
-}
-
-.icons {
-    margin-top: 20px;
-    width: 25px;
-    height: 25px;
-    margin-right: 20px;
-}
-
 li {
-    margin: 50px auto;
+    margin: 50px 10%;
+    width: 800px;
 }
 
 ul {
     height: auto;
+    padding-left: 0px;
 }
 
 .checkbox {
@@ -64,6 +43,7 @@ ul {
 
 label {
 font-size: 25px;
+margin-bottom: 20px;
 }
 
 .checkbox + label {
@@ -96,6 +76,7 @@ font-size: 25px;
 .img-4,
 .img-5 {
     display: none;
+    margin-top: 20px;
 }
 
 #checkbox-1:checked ~ .img-1 {
@@ -138,3 +119,22 @@ font-size: 25px;
     display: block;
 }
 
+@media screen and (max-width: 820px) {
+    html {
+        max-width: 820px;
+    }
+
+    .accordion-name {
+        font-size: 35px;
+    }
+
+    label {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+   html {
+    max-width: 320px;
+   }
+}
