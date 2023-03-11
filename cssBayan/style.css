@@ -1,0 +1,140 @@
+html {
+    max-width: 1920px;
+    background-color: rgb(175, 246, 246);
+}
+
+.header-cont {
+    width: 800px;
+    margin: auto;
+}
+.container {
+    width: 800px;
+    height: 1500px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.line {
+    width: 800px;
+    height: 2px;
+    background-color: rgb(173, 171, 171);
+}
+
+.header1-cont,
+.header2-cont,
+.header3-cont,
+.header4-cont,
+.header5-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.plus {
+    margin-right: auto;
+    display: none;
+}
+
+.cross {
+    margin-right: auto;
+    display: none;
+}
+
+.icons {
+    margin-top: 20px;
+    width: 25px;
+    height: 25px;
+    margin-right: 20px;
+}
+
+li {
+    margin: 50px auto;
+}
+
+ul {
+    height: auto;
+}
+
+.checkbox {
+    opacity: 0;
+    width: inherit;
+    height: auto;
+}
+
+label {
+font-size: 25px;
+}
+
+.checkbox + label {
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+}
+
+.checkbox + label:before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background:rgb(175, 246, 246);
+}
+
+.checkbox:hover +label:before {
+    background: url("../assets/plus.svg");
+    background-size: 20px 20px;
+}
+
+.checkbox:checked + label:before {
+    background: url("../assets/cross.svg");
+    background-size: 20px 20px;
+}
+
+.img-1,
+.img-2,
+.img-3,
+.img-4,
+.img-5 {
+    display: none;
+}
+
+#checkbox-1:checked ~ .img-1 {
+    display: block;
+}
+
+#checkbox-1:hover ~ .img-1 {
+    display: block;
+}
+
+#checkbox-2:checked ~ .img-2 {
+    display: block;
+}
+
+#checkbox-2:hover ~ .img-2 {
+    display: block;
+}
+
+#checkbox-3:checked ~ .img-3 {
+    display: block;
+}
+
+#checkbox-3:hover ~ .img-3 {
+    display: block;
+}
+
+#checkbox-4:checked ~ .img-4 {
+    display: block;
+}
+
+#checkbox-4:hover ~ .img-4 {
+    display: block;
+}
+
+#checkbox-5:checked ~ .img-5 {
+    display: block;
+}
+
+#checkbox-5:hover ~ .img-5 {
+    display: block;
+}
+
