@@ -8,7 +8,7 @@ html {
     margin: auto;
 }
 
-.accordion-name {
+.accordeon-name {
     text-align: center;
 }
 .container {
@@ -80,61 +80,67 @@ font-size: 1.5em;
 .img-5 {
     display: none;
     margin: 1em auto auto auto;
-    transition: display 1s;
+    transition: 1s;
+    opacity: 0;
     width: 90%;
 }
 
-#checkbox-1:default ~ .img-1 {
-    transition: display 1s;
-    display: block;
-}
-
 #checkbox-1:checked ~ .img-1 {
-    transition: display 1s;
+    opacity: 1;
+    transition: 1s;
     display: block;
 }
 
 #checkbox-1:hover ~ .img-1 {
-    transition: display 1s;
+    opacity: 1;
+    transition: 1s;
     display: block;
 }
 
 #checkbox-2:checked ~ .img-2 {
+    opacity: 1;
     display: block;
     transition: 1s;
 }
 
 #checkbox-2:hover ~ .img-2 {
+    opacity: 1;
     display: block;
     transition: 1s;
 }
 
 #checkbox-3:checked ~ .img-3 {
+    opacity: 1;
     display: block;
     transition: 1s;
 }
 
 #checkbox-3:hover ~ .img-3 {
+    opacity: 1;
     display: block;
     transition: 1s;
 }
 
 #checkbox-4:checked ~ .img-4 {
+    opacity: 1;
     display: block;
     transition: 1s;
 }
 
 #checkbox-4:hover ~ .img-4 {
+    opacity: 1;
     display: block;
     transition: 1s;
 }
 
 #checkbox-5:checked ~ .img-5 {
+    opacity: 1;
     display: block;
     transition: 1s;
 }
 
 #checkbox-5:hover ~ .img-5 {
+    opacity: 1;
     display: block;
     transition: 1s;
 }
@@ -144,7 +150,7 @@ font-size: 1.5em;
         max-width: inherit;
     }
 
-    .accordion-name {
+    .accordeon-name {
         font-size: 1.5em;
     }
 
@@ -193,12 +199,12 @@ font-size: 1.5em;
     margin: 0.5em auto auto auto;
 }
 
-.accordion-name {
+.accordeon-name {
     font-size: 1em;
 }
 
 label {
-    font-size: 0.7em;
+    font-size: 0.5em;
 }
 
 .checkbox:checked + label:before {
