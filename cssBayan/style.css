@@ -1,6 +1,6 @@
 html {
     max-width: inherit;
-    background-color: rgb(175, 246, 246);
+    background-color: rgb(188, 242, 242);
 }
 
 .header-cont {
@@ -57,7 +57,7 @@ font-size: 1.5em;
     display: inline-block;
     width: 0.8em;
     height: 0.8em;
-    background:rgb(175, 246, 246);
+    background:rgb(188, 242, 242);
     transition: 1s;
 }
 
@@ -78,6 +78,7 @@ font-size: 1.5em;
 .img-3,
 .img-4,
 .img-5 {
+    position: relative;
     display: none;
     margin: 1em auto auto auto;
     transition: 1s;
@@ -168,6 +169,53 @@ font-size: 1.5em;
 }
 }
 
+@media screen and (max-width: 520px) {
+    html {
+     max-width: inherit;
+    }
+ 
+    .header-cont {
+     width: 90%;
+    }
+ 
+    .container {
+     width: 90%;
+     margin-top: 10%;
+    }
+ 
+    .line {
+     width: 80%;
+    }
+ 
+    li {
+     width: inherit;
+    }
+ 
+    .img-1,
+ .img-2,
+ .img-3,
+ .img-4,
+ .img-5 {
+     width: 90%;
+     margin: 0.5em auto auto auto;
+ }
+ 
+ .accordeon-name {
+     font-size: 0.9em;
+ }
+ 
+ label {
+     font-size: 0.6em;
+ }
+ 
+ .checkbox:checked + label:before {
+     background-size: 0.6em;
+     background-repeat: no-repeat;
+     background-position: bottom;
+ }
+ 
+ }
+
 @media screen and (max-width: 320px) {
    html {
     max-width: inherit;
@@ -200,7 +248,7 @@ font-size: 1.5em;
 }
 
 .accordeon-name {
-    font-size: 1em;
+    font-size: 0.8em;
 }
 
 label {
@@ -208,7 +256,7 @@ label {
 }
 
 .checkbox:checked + label:before {
-    background-size: 0.7em;
+    background-size: 0.5em;
     background-repeat: no-repeat;
     background-position: bottom;
 }
