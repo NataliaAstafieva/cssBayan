@@ -167,6 +167,10 @@ font-size: 1.5em;
     width: 90%;
     margin: 0.7em auto auto auto;
 }
+
+.checkbox:checked + label:before {
+    background: none;
+}
 }
 
 @media screen and (max-width: 520px) {
@@ -209,9 +213,7 @@ font-size: 1.5em;
  }
  
  .checkbox:checked + label:before {
-     background-size: 0.6em;
-     background-repeat: no-repeat;
-     background-position: bottom;
+     background: none;
  }
  
  }
@@ -256,9 +258,7 @@ label {
 }
 
 .checkbox:checked + label:before {
-    background-size: 0.5em;
-    background-repeat: no-repeat;
-    background-position: bottom;
+    background: none;
 }
 
 }
